@@ -6,7 +6,6 @@ echo $VPC_COUNT
 echo ${VPC_COUNT}
 echo "${VPC_COUNT}"
 echo "US-EAST-1 has a total VPC count of ${VPC_COUNT} VPC's"
-echo "OK"
 
 
 
