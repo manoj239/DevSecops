@@ -1,5 +1,5 @@
-!/bin/bash
-# In below statements $1 can be called as argument or Param  which is passed to the script
+#!/bin/bash
+# In below statements $1 can be called as argument or Parameter  which is passed to the script
 REGION=$1
 echo "Lets Get VPC Information for region $REGION..."
 aws ec2 describe-vpcs --region $REGION | jq ".Vpcs[].VpcId" -r
