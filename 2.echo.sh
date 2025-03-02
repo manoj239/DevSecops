@@ -5,7 +5,7 @@ VPC_COUNT=$(aws ec2 describe-vpcs --region us-east-1 | jq ".Vpcs[].VpcId" -r | w
 echo $VPC_COUNT
 echo ${VPC_COUNT}
 echo "${VPC_COUNT}"
-echo "US-EAST-1 has a total VPC count of ${VPC_COUNT} VPC's"
+echo "US-EAST-1 has a total VPC's count of ${VPC_COUNT} VPC's"
 
 
 
