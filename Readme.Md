@@ -14,6 +14,7 @@ sudo ./aws/install
 5.net-tools
 6.tree
 
+
 GLobal Env Variable:
 echo $HOME
 echo $USER
