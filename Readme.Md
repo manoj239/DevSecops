@@ -11,7 +11,14 @@ unzip awscliv2.zip
 sudo ./aws/install
 
 4.AZ CLI
-
 5.net-tools
-
 6.tree
+
+GLobal Env Variable:
+echo $HOME
+echo $USER
+echo $PWD
+
+User Env Variable:
+export AWS_ACCESS_KEY_ID=AKIAWOAVSQWUGDWX5DPS
+export AWS_SECRET_ACCESS_KEY=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
