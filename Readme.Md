@@ -1,8 +1,14 @@
 apt update && apt install -y unzip jq net-tools tree
 
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
 unzip awscliv2.zip
+
 sudo ./aws/install
+
+curl https://get.docker.com | bash
+
+docker run --rm -d --name appl -p 8000:80 sreeharshav/fastapi:latest
 
 To get what type of OS we are using , give this -->  [unanme -a]
 
@@ -21,6 +27,11 @@ Following tools must be Installed on Ubuntu system
 5.net-tools
 
 6.tree
+
+>- Redirect output to a file and existing data will be overwritten
+>> - Redirect output to a file and existing data will be appended
+echo "WELCOME TO DEVOPS B43 -ICONSTAR" | tee -a /tmp/tee1 #appending existing data
+echo "WELCOME TO DEVOPS B43 -ICONSTAR" | tee  /tmp/tee1 #Overwritten existing data
 
 
 GLobal Env VariableS:
