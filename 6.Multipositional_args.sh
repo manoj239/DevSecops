@@ -1,8 +1,8 @@
 #!/bin/bash
-set -x  #Enable Debug
-REGION=$1
-REGION=$2
-REGION=$3
+set -x -e  #Enable Debug
+REGION1=$1
+REGION2=$2
+REGION3=$3
 echo "$0"
 echo "$1"
 echo "$2"
