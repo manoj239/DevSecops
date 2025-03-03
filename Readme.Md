@@ -5,6 +5,7 @@ unzip awscliv2.zip
 sudo ./aws/install
 
 To get what type of OS we are using , give this -->  [unanme -a]
+
 But above above command doesn't give release , so instead give   --> cat /etc/lsb-release
 
 Following tools must be Installed on Ubuntu system
