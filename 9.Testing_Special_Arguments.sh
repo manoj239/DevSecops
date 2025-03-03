@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ $# -gt 0]
+if [ $# -gt 0 ]
 echo "You have Provided $# Arguments to this script..."
 echo "Lets Get VPC Information for region $1..."
 aws ec2 describe-vpcs --region $1 | jq ".Vpcs[].VpcId" -r
