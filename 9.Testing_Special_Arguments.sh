@@ -8,5 +8,5 @@ if [ $# -gt 0 ]; then
 else
     REGIONS=$(aws ec2 describe-regions | jq ".Regions[].RegionName" -r)
         echo "No region Arg Provided . Please provide a valid AWS Region Name as shown below"
-        echo $REGIONS
-fi 
+        echo "$REGIONS"
+fi
