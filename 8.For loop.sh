@@ -9,6 +9,6 @@ for I in {1..10..2}; do
 done
 
 
-for (( I=1: I<=5; I++)); do
+for (( I=1; I<=5; I++)); do
     echo "welcome $c times"
 done
