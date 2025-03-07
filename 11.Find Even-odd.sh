@@ -3,8 +3,8 @@
 rm -rf /tmp/EVEN.log && rm -rf /tmp/ODD.log
 for I in {2..30}; do
     if [ $(expr $I % 2) == 0 ]; then
-        echo "I is $I and its a EVEN number"  >>/tmp/EVEN.log
+        echo "I is $I and its a EVEN number" >>/tmp/EVEN.log
     else
-        "I is $I and its a ODD number" >>/tmp/ODD.log
+        echo  "I is $I and its a ODD number" >>/tmp/ODD.log
     fi
 done
