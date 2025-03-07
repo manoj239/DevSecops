@@ -1,6 +1,6 @@
 #Take Username as Input and check if the user already exists
 #if the user dont exists ,create user and genrate random password
-India@<random><spec>
+#India@<random><spec>
 #Force the user to reset the password on the first login
 
 #!/bin/bash
