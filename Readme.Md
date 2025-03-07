@@ -34,6 +34,14 @@ echo "WELCOME TO DEVOPS B43 -ICONSTAR" | tee -a /tmp/tee1 #appending existing da
 echo "WELCOME TO DEVOPS B43 -ICONSTAR" | tee  /tmp/tee1 #Overwritten existing data
 
 
+cat /etc/passwd | grep -i -w ubuntu
+cat /etc/passwd | grep -E -w 'ubuntu|ubuntu1'
+cat /tmp/event.log | grep -E -i 'error|denied'
+
+cut command
+
+cat /etc/passwd | grep -i -w ubuntu | cut -d ":" -f 1
+
 GLobal Env VariableS:
 echo $HOME
 echo $USER
