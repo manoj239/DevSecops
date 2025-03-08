@@ -1,9 +1,9 @@
 apt update && apt install -y unzip jq net-tools tree
 
+https://releases.hashicorp.com/terraform/1.11.1/terraform_1.11.1_linux_arm64.zip
+
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-
 unzip awscliv2.zip
-
 sudo ./aws/install
 
 curl https://get.docker.com | bash
@@ -28,15 +28,15 @@ Following tools must be Installed on Ubuntu system
 
 6.tree
 
->- Redirect output to a file and existing data will be overwritten
->> - Redirect output to a file and existing data will be appended
-echo "WELCOME TO DEVOPS B43 -ICONSTAR" | tee -a /tmp/tee1 #appending existing data
-echo "WELCOME TO DEVOPS B43 -ICONSTAR" | tee  /tmp/tee1 #Overwritten existing data
+  >- Redirect output to a file and existing data will be overwritten
+  >> - Redirect output to a file and existing data will be appended
+  echo "WELCOME TO DEVOPS B43 -ICONSTAR" | tee -a /tmp/tee1 #appending existing data
+  echo "WELCOME TO DEVOPS B43 -ICONSTAR" | tee  /tmp/tee1 #Overwritten existing data
 
 
-cat /etc/passwd | grep -i -w ubuntu
-cat /etc/passwd | grep -E -w 'ubuntu|ubuntu1'
-cat /tmp/event.log | grep -E -i 'error|denied'
+ cat /etc/passwd | grep -i -w ubuntu
+ cat /etc/passwd | grep -E -w 'ubuntu|ubuntu1'
+ cat /tmp/event.log | grep -E -i 'error|denied'
 
 cut command
 
