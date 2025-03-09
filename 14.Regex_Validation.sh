@@ -16,5 +16,5 @@ done
 
 #https://kodekloud.com/blog/regex-shell-script/
 #BASH_REMATCH[0] = https://
-$BASH REMATCH[1] = www.google.com  
-$BASH REMATCH[2] = .
+#$BASH REMATCH[1] = www.google.com  
+#$BASH REMATCH[2] = .
