@@ -7,7 +7,7 @@ if [[ "$URL" =~ ^https?://([^/]+) ]]; then
     domain=${BASH_REMATCH[1]}
     echo "$URL is a valid URL and domian name is $domain ."
 else
-    echo "$ is invalid URL as it is not starting with http or https."
+    echo "$URL is invalid URL as it is not starting with http or https."
 fi
 done
 
