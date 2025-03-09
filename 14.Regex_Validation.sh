@@ -3,7 +3,7 @@ DATA=$(cat applist.log)
 echo $DATA
 for  URL in $DATA
 do
-if [[ "$URL" =~ ^https?://([^/])+) ]]; then
+if [[ "$URL" =~ ^https?://([^/]+) ]]; then
     domain=${BASH_REMATCH[1]}
     echo "$URL is a valid URL and domian name is $domain ."
 else
