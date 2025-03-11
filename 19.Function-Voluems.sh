@@ -13,3 +13,10 @@ delete_ebs_vols() {
 }
 
 delete_ebs_vols $1
+REGION_LIST=$(aws ec2 describe-regions | jq ".Regions[].RegionName" -r | wc -l)
+REGIONS=$(aws ec2 describe-regions | jq ".Regions[].RegionName" -r)
+echo "We have a total of $REGION_LIST Regions..."
+for REGION in ${REGIONS[@]}; do
+    echo "Lets Delete the volumes for Region ${REGION}.."
+    delete_ebs_vols $REGION
+done
