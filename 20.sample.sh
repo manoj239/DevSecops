@@ -1,3 +1,3 @@
 for REG in $@; do
-    Get_VPC $REG
+    echo $REG
 done
