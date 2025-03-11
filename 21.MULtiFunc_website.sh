@@ -1,6 +1,6 @@
 #!/bin/bash
 DOMAIN=$@
-if [$# -gt 0]; then
+if [ $# -gt 0 ]; then
     for WEBSITE in $DOMIAN; do
         timeout 3 netcat -zv $WEBSITE 443 >>/dev/null 2>&1
         if [ $? -eq 0 ]; then
