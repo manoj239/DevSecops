@@ -1,3 +1,8 @@
+Get_VPC() {
+    echo "Running the function To list VPCs in $1"
+    vpc_list=$(aws ec2 describe-vpcs --region $1 | jq .Vpcs[].VpcId -r)
+}
+
 for REG in $@; do
-    echo $REG
+    Get_VPC $REG
 done
