@@ -42,10 +42,24 @@ cut command
 
 cat /etc/passwd | grep -i -w ubuntu | cut -d ":" -f 1
 
+X="Devsecops"
+echo $x , O/p: Devsecops
+
+echo $#x[@] , O/p:0X[@]
+
+echo ${x[@]} , o/p: Devsecops
+
+echo ${#x}, O/p: 9
+
 GLobal Env VariableS:
 echo $HOME
 echo $USER
 echo $PWD
+
+#aws ec2 describe-volumes --region us-east-1 | jq ".Volumes[].VolumeId" -r, Used to tell the volumes vaiable in the region
+#aws ec2 describe-volumes --volume-ids vol-03d5d505e1e543a80 | jq ".Volumes[].Size" -r, Used to tell the size for the volume in the region
+#aws ec2 describe-volumes --volume-ids vol-03d5d505e1e543a80 | jq ".Volumes[].State" -r , Used to tell the state of 
+of the volume
 
 User Env VariableS:
 export AWS_ACCESS_KEY_ID=AKIAWOAVSQWUGDWX5DPS
