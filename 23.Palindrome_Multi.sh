@@ -1,3 +1,4 @@
+#!/bin/bash
 INPUT_STRING=$1
 for INPUT_STRING in $@
 do
