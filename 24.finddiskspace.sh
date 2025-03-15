@@ -7,7 +7,7 @@ if [[ $# -le 0 ]]; then
 #test if argument is an integer
 #if it is , use that as percent , if not use default
 else
-    if [ $1 -le 100 -a $1 -gt 0]; then
+    if [ $1 -le 100 -a $1 -gt 0 ]; then
         PERCENT=$1
     else
         echo "INVALID INPUT Value . The Threshold value Must be Between 0 to 100"
