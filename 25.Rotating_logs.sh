@@ -27,5 +27,5 @@ if [ ${size} -gt ${MAXSIZE} ]; then
     # Create a new empty log file
     touch $f
 else
-    echo "The file '$f' size is less than 10MB. No need to rotate."
+    echo "The file '$f' size is ${size} which is less than 10MB. No need to rotate."
 fi
