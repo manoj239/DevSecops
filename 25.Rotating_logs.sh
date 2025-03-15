@@ -17,13 +17,14 @@ MAXSIZE=$((10 * 1024))
 size=$(du -b ${f} | tr -s '\t' ' ' | cut -d ' ' -f1)
 
 # Check if file size exceeds the limit
-if [ ${size} -gt ${MAXSIZE} ]; then
+if [ ${size} -gt ${MAXSIZE} ]; then 
     echo Rotating!
 
     # Create timestamp
     timestamp=$(date +%s)
     # Rename the log file with timestamp
     mv ${f} ${f}.$timestamp
+    aws s3 cp ${f}.$timestamp s3://genrelpu/${f}.$timestamp
     # Create a new empty log file
     touch $f
 else
